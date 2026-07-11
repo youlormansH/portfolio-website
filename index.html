@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  /* Set theme before first paint to avoid a flash of the wrong theme */
+  (function () {
+    var saved = localStorage.getItem('theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Youlormans Hilaire — Business Consultant &amp; Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Youlormans Hilaire, a Customer Success &amp; Business Consultant with full-stack development skills. Experience, skills, and contact information.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#hero" class="logo">YH<span class="logo-dot">.</span></a>
+
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Hi, my name is</p>
+      <h1>Youlormans Hilaire</h1>
+      <p class="hero-title">Business Consultant &amp; Full-Stack Developer</p>
+      <p class="hero-pitch">I help businesses grow through client relationship management, onboarding, and tax
+        advisory services — and I build the web tools that support them. 10+ years driving customer success,
+        retention, and sales, with hands-on full-stack development experience.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-index">01.</span> About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="assets/profile.jpg" alt="Youlormans Hilaire" class="profile-photo">
+        </div>
+
+        <div class="about-content">
+          <p>
+            I'm a Customer Success and Business Consultant with 10+ years of experience in client relationship
+            management, onboarding, implementation, retention, sales, and tax advisory services. I'm adept at
+            guiding clients through complex business and tax solutions to drive adoption, satisfaction, and
+            long-term retention.
+          </p>
+          <p>
+            I have a strong track record of managing multiple client portfolios, delivering virtual training,
+            resolving escalated issues, and collaborating cross-functionally to meet business and operational
+            goals — and I bring a full-stack developer's perspective to the tools and workflows I help build.
+          </p>
+
+          <ul class="skill-pills" aria-label="Core skills and technologies">
+            <li>Client Relationship Management</li>
+            <li>Tax Preparation &amp; Compliance</li>
+            <li>Customer Success &amp; Retention</li>
+            <li>Salesforce / CRM Tools</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-index">02.</span> Projects</h2>
+      <p class="section-intro">A selection of full-stack projects from my development coursework and practice.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card-image">
+            <img src="assets/weather-dashboard.jpg" alt="" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <div class="project-links">
+                <a href="https://github.com/youlormansH/WeatherHomework" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub for Weather Dashboard">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://youlormansH.github.io/WeatherHomework/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Weather Dashboard">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p class="project-desc">A browser-based weather app that shows current conditions and a 5-day forecast for any searched city, with recent-search history.</p>
+            <ul class="tech-tags">
+              <li>JavaScript</li><li>HTML</li><li>CSS</li><li>OpenWeather API</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-image">
+            <img src="assets/social-network.jpg" alt="" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <div class="project-links">
+                <a href="https://github.com/youlormansH/my-social-network-api" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub for Social Network API">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://youlormansH.github.io/my-social-network-api/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Social Network API">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Social Network API</h3>
+            <p class="project-desc">A RESTful API for a social networking app where users can share thoughts, react to friends' posts, and manage a friend list.</p>
+            <ul class="tech-tags">
+              <li>Node.js</li><li>Express</li><li>MongoDB</li><li>Mongoose</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-image">
+            <img src="assets/employee-tracker.jpg" alt="" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <div class="project-links">
+                <a href="https://github.com/youlormansH/Employees-Challenge" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub for Employee Tracker CLI">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://youlormansH.github.io/Employees-Challenge/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Employee Tracker CLI">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Employee Tracker CLI</h3>
+            <p class="project-desc">A command-line app for managing a company's employee database — add departments, roles, and employees, then view or update records interactively.</p>
+            <ul class="tech-tags">
+              <li>Node.js</li><li>Inquirer</li><li>MySQL</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-image">
+            <img src="assets/ecommerce.jpg" alt="" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <div class="project-links">
+                <a href="https://github.com/youlormansH/E-commerce" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub for E-Commerce Back End">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://youlormansH.github.io/E-commerce/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of E-Commerce Back End">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">E-Commerce Back End</h3>
+            <p class="project-desc">A RESTful back end for an e-commerce platform, with models and routes for managing categories, products, and tags.</p>
+            <ul class="tech-tags">
+              <li>Node.js</li><li>Express</li><li>MySQL</li><li>Sequelize</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-image">
+            <img src="assets/note-taker.jpg" alt="" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <div class="project-links">
+                <a href="https://github.com/youlormansH/note-taker" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub for Note Taker">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://youlormansH.github.io/note-taker/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Note Taker">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Note Taker</h3>
+            <p class="project-desc">A full-stack note-taking app for creating, saving, and deleting personal notes, backed by a lightweight Express server.</p>
+            <ul class="tech-tags">
+              <li>JavaScript</li><li>Express</li><li>Node.js</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-image">
+            <img src="assets/text-editor.jpg" alt="" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <div class="project-links">
+                <a href="https://github.com/youlormansH/my-text-editor-challenge" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub for PWA Text Editor">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+                </a>
+                <a href="https://youlormansH.github.io/my-text-editor-challenge/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of PWA Text Editor">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">PWA Text Editor</h3>
+            <p class="project-desc">An installable, offline-capable text editor that runs entirely in the browser as a Progressive Web App.</p>
+            <ul class="tech-tags">
+              <li>JavaScript</li><li>Express</li><li>PWA</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-index">03.</span> Experience</h2>
+
+      <div class="resume-download">
+        <p class="section-intro">Prefer a document? Grab a copy of my resume.</p>
+        <a href="assets/resume.pdf" class="btn btn-outline" download>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Resume
+        </a>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2022 — May 2026</div>
+            <h3 class="timeline-title">Partner &amp; Business Consultant</h3>
+            <p class="timeline-org">CEPowerTax — Orlando, FL</p>
+            <ul class="timeline-list">
+              <li>Prepared and reviewed 100+ individual and small business tax returns, ensuring full compliance with federal and state regulations.</li>
+              <li>Consulted with small business owners to assess operational and tax-related needs, delivering tailored financial and compliance solutions aligned with business objectives.</li>
+              <li>Managed multiple client engagements simultaneously, maintaining high customer satisfaction and ensuring timely completion of tax preparation, filing, and advisory services.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2024 — Apr 2025</div>
+            <h3 class="timeline-title">Business Tax Expert</h3>
+            <p class="timeline-org">Intuit — Orlando, FL</p>
+            <ul class="timeline-list">
+              <li>Delivered expert guidance on complex business tax matters, financial compliance, and tax planning strategies, improving client understanding and decision-making.</li>
+              <li>Resolved 85% of customer tax inquiries on first contact by providing support on deductions, bookkeeping, payroll taxes, and filing requirements via phone and virtual channels.</li>
+              <li>Managed multiple client cases in a fast-paced remote environment while meeting productivity, quality, and performance metrics.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Mar 2023 — Jul 2023</div>
+            <h3 class="timeline-title">Full-Stack Web Developer Intern</h3>
+            <p class="timeline-org">University of Central Florida — Orlando, FL</p>
+            <ul class="timeline-list">
+              <li>Developed and supported web applications using HTML, CSS, JavaScript, and React, contributing to responsive and interactive user interfaces.</li>
+              <li>Worked with back-end technologies including Node.js and MySQL to build and maintain server-side functionality and database integration.</li>
+              <li>Gained hands-on experience with NoSQL databases and progressive web application concepts, improving understanding of full-stack development workflow.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2020 — Jul 2022</div>
+            <h3 class="timeline-title">Sales Consultant</h3>
+            <p class="timeline-org">AT&amp;T — Orlando, FL</p>
+            <ul class="timeline-list">
+              <li>Led a sales team to a 50% increase in annual revenue by implementing training programs and performance-driven incentives.</li>
+              <li>Developed and executed a customer segmentation strategy, resulting in a 20% increase in B2B sales.</li>
+              <li>Managed key client relationships, improving customer retention by 15% and increasing customer lifetime value.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2017 — Jul 2020</div>
+            <h3 class="timeline-title">Customer Service</h3>
+            <p class="timeline-org">Spectrum — Orlando, FL</p>
+            <ul class="timeline-list">
+              <li>Achieved a 95% customer satisfaction rate by implementing feedback-driven service improvements and consistent service quality standards.</li>
+              <li>Reduced customer resolution time by 20% by improving support workflows and optimizing ticket handling processes.</li>
+              <li>Trained and mentored new hires, reducing onboarding time by 15% and improving overall team performance.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Education</div>
+            <h3 class="timeline-title">B.S. in Business Administration</h3>
+            <p class="timeline-org">University of Central Florida — Orlando, FL</p>
+            <p class="timeline-desc">Also completed a Certificate for Full-Stack Web Developer.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-heading"><span class="heading-index">04.</span> Skills</h2>
+
+      <div class="skills-groups">
+        <div class="skills-group">
+          <h3 class="skills-group-title">Business &amp; Tax</h3>
+          <ul class="skill-tags">
+            <li>Tax Preparation &amp; Financial Compliance</li>
+            <li>Client Onboarding &amp; Implementation</li>
+            <li>Customer Success &amp; Retention</li>
+            <li>Issue Resolution &amp; Escalation Management</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Client Engagement</h3>
+          <ul class="skill-tags">
+            <li>Virtual Training &amp; Customer Education</li>
+            <li>Relationship Management</li>
+            <li>Cross-Functional Collaboration</li>
+            <li>Data-Driven Problem Solving</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Tools &amp; Process</h3>
+          <ul class="skill-tags">
+            <li>Salesforce / CRM Tools</li>
+            <li>Process Improvement &amp; Workflow Optimization</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Web Development</h3>
+          <ul class="skill-tags">
+            <li>HTML &amp; CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>MySQL</li><li>NoSQL</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Programming Languages</h3>
+          <ul class="skill-tags">
+            <li>Python</li><li>Java</li><li>TypeScript</li><li>C++</li><li>SQL</li><li>PHP</li><li>HTML5</li><li>CSS3</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Tools &amp; Platforms</h3>
+          <ul class="skill-tags">
+            <li>Git</li><li>GitHub</li><li>Visual Studio Code</li><li>IntelliJ IDEA</li><li>Postman</li><li>Jira</li><li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-inner">
+      <h2 class="section-heading"><span class="heading-index">05.</span> Get In Touch</h2>
+      <p class="section-intro">
+        I'm currently open to new opportunities and interesting projects. Whether you have a question
+        or just want to say hi, my inbox is always open.
+      </p>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:youlormans@gmail.com">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6z"></path><polyline points="22 6 12 13 2 6"></polyline></svg>
+            youlormans@gmail.com
+          </a>
+          <a class="contact-link" href="tel:+14074553675">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.79.63 2.65a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.43-1.27a2 2 0 0 1 2.11-.45c.86.3 1.75.51 2.65.63A2 2 0 0 1 22 16.92z"></path></svg>
+            407-455-3675
+          </a>
+          <a class="contact-link" href="https://github.com/youlormansH" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+            github.com/youlormansH
+          </a>
+          <span class="contact-link contact-link-static">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Houston, TX
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Youlormans Hilaire. Built with plain HTML, CSS &amp; JS.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/youlormansH" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.15-.02-2.09-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.02-.7.08-.69.08-.69 1.12.08 1.72 1.15 1.72 1.15 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .93-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.09 0 1.51-.01 2.72-.01 3.09 0 .3.2.65.77.54A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"></path></svg>
+      </a>
+      <a href="tel:+14074553675" aria-label="Phone">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.79.63 2.65a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.43-1.27a2 2 0 0 1 2.11-.45c.86.3 1.75.51 2.65.63A2 2 0 0 1 22 16.92z"></path></svg>
+      </a>
+      <a href="mailto:youlormans@gmail.com" aria-label="Email">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6z"></path><polyline points="22 6 12 13 2 6"></polyline></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
